@@ -5,20 +5,15 @@ const modal = (identifier) => {
 
     modalBtn.onclick = () => {
         modalBox.style.display = "block";
-        console.log("btn")
     }
 
     modalClose.onclick = () => {
         modalBox.style.display = "none"
-        console.log("close")
     }
 
     window.onclick = event => {
         if (event.target == modalBox) {
             modalBox.style.display = "none"
-            console.log("out")
         }
     }
 }
-
-modal('modal')
